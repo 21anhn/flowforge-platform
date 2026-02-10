@@ -1,4 +1,6 @@
-﻿namespace BuildingBlocks.SharedKernel.Abstractions
+﻿using FlowForge.BuildingBlocks.SharedKernel.Abstractions;
+
+namespace BuildingBlocks.SharedKernel.Abstractions
 {
     public abstract class AggregateRoot<TId> : Entity<TId> where TId : notnull
     {

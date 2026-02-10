@@ -1,9 +1,6 @@
-﻿
-using FlowForge.BuildingBlocks.SharedKernel.Abstractions;
+﻿namespace FlowForge.BuildingBlocks.SharedKernel.Abstractions;
 
-namespace BuildingBlocks.SharedKernel.Abstractions;
-
-public abstract class Entity<TId> where TId : notnull, ICreatedAuditable<TId>, IUpdatedAuditable<TId>, IDeletedAuditable<TId>
+public abstract class Entity<TId> where TId : notnull
 {
     public TId Id { get; protected set; } = default!;
 
